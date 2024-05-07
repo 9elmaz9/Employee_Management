@@ -14,7 +14,7 @@
 	<name>springboot-thymeleaf-crud-web-app</name>
 	<description>springboot-thymeleaf-crud-web-app</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

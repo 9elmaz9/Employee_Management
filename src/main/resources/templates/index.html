@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="new_employee.css">
+    <link rel="stylesheet" type="text/css" href="update_employee.css">
+
+</head>
+<body>
+
+<h1>Employee Management System</h1>
+
+<!-- Display list of employees -->
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="employee : ${listEmployees}">
+        <td th:text="${employee.id}"></td>
+        <td th:text="${employee.firstName}"></td>
+        <td th:text="${employee.lastName}"></td>
+        <td th:text="${employee.email}"></td>
+        <td>
+            <a th:href="@{'/showFormUpdate/' + ${employee.id}}">Edit</a>
+            <a th:href="@{'/deleteEmployee/' + ${employee.id}}" onclick="return confirm('Are you sure you want to delete this employee?')">Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- Link to add new employee form -->
+<a href="/showNewEmployeeForm">Add New Employee</a>
+
+</body>
+</html>
