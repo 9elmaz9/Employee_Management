@@ -11,19 +11,6 @@ This repository contains the source code for an Employee Management System imple
 - Supports updating employee information
 - Provides functionality for deleting employees from the system
 
-## Installation
-
-To run the Employee Management System locally, follow these steps:
-
-1. Clone the repository to your local machine using the following command:
-2. 
-3. git clone https://github.com/9elmaz9/employee-management-system.git
-
-   
-2. Import the project into your preferred Java IDE (e.g., IntelliJ IDEA, Eclipse).
-
-3. Build and run the project.
-
 ## Usage
 
 Once the project is up and running, you can access the Employee Management System through a web browser. Here are the available endpoints:
