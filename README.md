@@ -14,8 +14,8 @@ This repository contains the source code for an Employee Management System imple
 ## Usage
 
 Once the project is up and running, you can access the Employee Management System through a web browser. Here are the available endpoints:
-
-- **View List of Employees**  http://localhost:8080/ . **:
+<!-- 
+- **View List of Employees**  http://localhost:8080/ . **: -->
 - 
 - **View List of Employees**: Navigate to the homepage ("/") to see a list of all employees.
 
