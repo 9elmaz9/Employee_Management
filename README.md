@@ -27,12 +27,10 @@ Once the project is up and running, you can access the Employee Management Syste
 
 - Java
 - Spring Framework
-- Thymeleaf (for server-side HTML rendering)
+- Thymeleaf (for server-side HTML rendering and CSS)
 
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, feel free to submit a pull request with your changes.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
