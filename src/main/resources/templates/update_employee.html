@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Employee</title>
-    <link rel="stylesheet" type="text/css" href="update_employee.css">
+    <link rel="stylesheet" >
 
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        h1 {
+            color: #ff69b4;
+        }
+
+        button[type="submit"] {
+            background-color: #ff69b4; /* pink */
+            color: #fff; /* white */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #d63c78; /* dark pink */
+        }
+
+        /*style  :add remove employee */
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+
+
+
+        /* linkstyle "Add New Employee" */
+        .centered-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-to-home {
+            display: inline-block;
+            background-color: #d63c78;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-to-home:hover {
+            background-color: #b62f64;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -21,7 +97,12 @@
     <button type="submit">Update</button>
 </form>
 
-<a href="/">Back to Home</a>
+
+<div class="centered-link">
+    <a class="back-to-home" href="/showNewEmployeeForm">Back to Home</a>
+</div>
+<!--
+<a href="/">Back to Home</a> -->
 
 </body>
 </html>
